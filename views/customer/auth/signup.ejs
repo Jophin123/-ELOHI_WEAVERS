@@ -1,13 +1,48 @@
 <%- include('../includes/head',{pageTitle:'signup'})%>
 </head>
 <body>
-    <% include('../includes/header')%>
+    <%- include('../includes/header')%>
     <main>
-<h1>CREATE NEW ACCOUNT</h1>
+<h1>CREATE NEW ACCOUNT</h1><button type="button" class="btn btn-danger">Danger</button>
 <form action="" method="">
+   <p>
     <label for="email">Email</label>
-    <input type="email" id="email" name="email">
+    <input type="email" id="email" name="email" required>
+   </p> 
+   <p>
+    <label for="confirm_email">Email</label>
+    <input type="email" id="confirm_email" name="confirm_email" required>
+   </p> 
+   <p>
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" minlength="6" required>
+   </p> 
+   <p>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="fname" required>
+   </p> 
+   <p>
+    <label for="lname">Sur Name</label>
+    <input type="text" id="lname" name="lname" required>
+   </p> 
+   <p>
+    <label for="street">Street Name</label>
+    <input type="text" id="street" name="street" required>
+   </p> 
+   <p>
+    <label for="pcode">Post Code</label>
+    <input type="text" id="pcode" name="pcode" minlength="5" maxlength="5" required>
+   </p> 
+   <p>
+    <label for="city">City</label>
+    <input type="text" id="city" name="city" required>
+   </p> 
+   <button type="submit" class="btn">Create Account</button>
+  <p><a href="/login">Login Instead</a></p> 
 </form>
     </main>
     
-<% include('../includes/footer')%>
+<%- include('../includes/footer')%>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
