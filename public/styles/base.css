@@ -1,3 +1,6 @@
 html{
     font-family: 'montserrat','sans-serif';
 }
+body{
+    font-family: 'montserrat','sans-serif' !important;
+}
