@@ -1,6 +1,18 @@
 html{
     font-family: 'montserrat','sans-serif';
+
 }
 body{
     font-family: 'montserrat','sans-serif' !important;
+    background-image: -webkit-image-set("https://res.cloudinary.com/auki-digital-solutions/image/upload/v1626362847/buana/general1.png");
+   
+}
+main{
+    margin: auto;
+    width: 90%;
+    max-width: 50rem;
+ 
+}
+.btn{
+    background-color: burlywood;
 }

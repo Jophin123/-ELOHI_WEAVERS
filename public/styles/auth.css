@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+  
+}
+form{
+    max-width: 25rem;
+    background-color:rgb(175, 238, 159);
+    text-align: center;
+    margin:2rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    
+}
