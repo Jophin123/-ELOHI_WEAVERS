@@ -1,0 +1,46 @@
+<%- include('../includes/head',{pageTitle:'signup'})%>
+</head>
+<body>
+    <%- include('../includes/header')%>
+    <main>
+<h1>Login</h1>
+<form action="/signup" method="POST">
+    <input type="hidden" name="<%= locals.csrfToken %>">
+   <p>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+   </p> 
+   <p>
+    <label for="confirm_email">confirm email</label>
+    <input type="email" id="confirm_email" name="confirm_email" required>
+   </p> 
+   <p>
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" minlength="6" required>
+   </p> 
+   <p>
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" name="fname" required>
+   </p> 
+  
+   <p>
+    <label for="street">Street Name</label>
+    <input type="text" id="street" name="street" required>
+   </p> 
+   <p>
+    <label for="pcode">Post Code</label>
+    <input type="text" id="pcode" name="pcode" minlength="5" maxlength="5" required>
+   </p> 
+   <p>
+    <label for="city">City</label>
+    <input type="text" id="city" name="city" required>
+   </p> 
+   <button type="submit" class="btn">Create Account</button>
+  <p><a href="/login">Login Instead</a></p> 
+</form>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>     
+<%- include('../includes/footer')%>
+
+</body>
+</html>
